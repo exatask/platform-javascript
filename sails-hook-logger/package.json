@@ -1,0 +1,34 @@
+{
+  "name": "@exatask/sails-hook-logger",
+  "version": "1.0.0",
+  "description": "Enhanced logger which uses Watson",
+  "main": "index.js",
+  "scripts": {
+    "test": "test",
+    "publish": "npm publish --access public",
+    "lint": "eslint --fix *.*"
+  },
+  "publishConfig": {
+    "@exatask:registry": "https://gitlab.com/exatask/platform-javascript"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/exatask/platform-javascript.git"
+  },
+  "keywords": [
+    "logger",
+    "context"
+  ],
+  "dependencies": {
+    "winston": "^3.9.0",
+    "winston-daily-rotate-file": "^4.7.1"
+  },
+  "author": "Rohit Aggarwal <er.rohitaggarwal1989@gmail.comv>",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "sails": "^1.5.4"
+  },
+  "sails": {
+    "isHook": true
+  }
+}

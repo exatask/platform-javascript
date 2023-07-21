@@ -1,0 +1,36 @@
+{
+  "name": "@exatask/sails-hook-mongoose",
+  "version": "1.0.0",
+  "description": "Mongoose Implementation with SailsJS",
+  "main": "index.js",
+  "scripts": {
+    "test": "test",
+    "publish": "npm publish --access public",
+    "lint": "eslint --fix *.*"
+  },
+  "publishConfig": {
+    "@exatask:registry": "https://gitlab.com/exatask/platform-javascript"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/exatask/platform-javascript"
+  },
+  "keywords": [
+    "mongoose",
+    "mongodb",
+    "context"
+  ],
+  "dependencies": {
+    "include-all": "^4.0.3",
+    "mongoose": "^7.2.2",
+    "promise": "^8.3.0"
+  },
+  "author": "Rohit Aggarwal <er.rohitaggarwal1989@gmail.com>",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "sails": "^1.5.4"
+  },
+  "sails": {
+    "isHook": true
+  }
+}
