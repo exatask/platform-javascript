@@ -27,7 +27,7 @@
     "promise": "^8.3.0"
   },
   "author": "Rohit Aggarwal <er.rohitaggarwal1989@gmail.com>",
-  "license": "UNLICENSED",
+  "license": "MIT",
   "devDependencies": {
     "sails": "^1.5.4"
   },

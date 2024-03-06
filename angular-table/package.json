@@ -1,34 +1,28 @@
 {
-  "name": "@exatask/sails-hook-logger",
+  "name": "@exatask/angular-table",
   "version": "1.0.0",
-  "description": "Enhanced logger which uses Watson",
-  "main": "index.js",
+  "description": "Enhanced Tables implementation using configuration with Angular",
+  "main": "main.ts",
   "scripts": {
     "test": "test",
     "publish": "npm publish --access public",
     "lint": "eslint --fix *.*"
   },
   "publishConfig": {
-    "@exatask:registry": "https://gitlab.com/exatask/platform-javascript"
+    "@exatask:registry": "http://exatask-npm:4973"
   },
   "repository": {
     "type": "git",
     "url": "git+https://gitlab.com/exatask/platform-javascript.git"
   },
   "keywords": [
-    "logger",
-    "context"
+    "table",
+    "angular"
   ],
   "dependencies": {
-    "winston": "^3.9.0",
-    "winston-daily-rotate-file": "^4.7.1"
   },
   "author": "Rohit Aggarwal <er.rohitaggarwal1989@gmail.comv>",
   "license": "MIT",
   "devDependencies": {
-    "sails": "^1.5.4"
-  },
-  "sails": {
-    "isHook": true
   }
 }
