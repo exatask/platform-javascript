@@ -4,7 +4,7 @@ This repository is divided into multiple libraries. These libraries are either c
 boilerplate to a functionality that underlying microservices can use.
 
 - [angular-form](angular-form/README.md)
-- [angular-table](angular-table/README.md)
+- [angular-table](ngx-library-table/README.md)
 - [sails-hook-logger](sails-hook-logger/README.md)
 - [sails-hook-mailer](sails-hook-mailer/README.md)
 - [sails-hook-mongoose](sails-hook-mongoose/README.md)
