@@ -26,7 +26,7 @@
   },
   "author": "Rohit Aggarwal <er.rohitaggarwal1989@gmail.com>",
   "license": "MIT",
-  "devDependencies": {
+  "peerDependencies": {
     "sails": "^1.5.4"
   },
   "sails": {

@@ -1,7 +1,6 @@
 /*
- * Public API Surface of ngx-lib-form
+ * Public API Surface of ngx-library-table
  */
 
-export * from './lib/ngx-lib-table.service';
-export * from './lib/ngx-lib-table.component';
-export * from './lib/ngx-lib-table.module';
+export * from './lib/ngx-table.service';
+export * from './lib/ngx-table.component';

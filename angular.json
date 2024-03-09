@@ -1,0 +1,53 @@
+{
+  "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "version": 1,
+  "newProjectRoot": "projects",
+  "projects": {
+    "ngx-library-form": {
+      "projectType": "library",
+      "root": "ngx-library-form",
+      "sourceRoot": "ngx-library-form/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "ngx-library-form/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "ngx-library-form/tsconfig.prod.json"
+            },
+            "development": {
+              "tsConfig": "ngx-library-form/tsconfig.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        }
+      }
+    },
+    "ngx-library-table": {
+      "projectType": "library",
+      "root": "ngx-library-table",
+      "sourceRoot": "ngx-library-table/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "ngx-library-table/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "ngx-library-table/tsconfig.prod.json"
+            },
+            "development": {
+              "tsConfig": "ngx-library-table/tsconfig.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        }
+      }
+    }
+  }
+}

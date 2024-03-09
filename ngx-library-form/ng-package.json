@@ -1,7 +1,7 @@
 {
   "$schema": "../node_modules/ng-packagr/ng-package.schema.json",
-  "dest": "../dist/ngx-lib-table",
+  "dest": "./dist/ngx-library-form",
   "lib": {
-    "entryFile": "./public-api.ts"
+    "entryFile": "src/public-api.ts"
   }
 }
