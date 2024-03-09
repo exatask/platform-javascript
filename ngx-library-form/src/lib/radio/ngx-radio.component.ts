@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { NgxRadio } from "../../input/ngx-element";
 
 @Component({
   selector: 'ngx-radio',
@@ -11,4 +12,8 @@ import { CommonModule } from '@angular/common';
 })
 export class NgxRadioComponent {
 
+  @Input({
+    required: true
+  })
+  element!: NgxRadio;
 }

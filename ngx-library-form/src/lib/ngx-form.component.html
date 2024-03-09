@@ -1,3 +1,9 @@
-<p>
-  Form Works!!!
-</p>
+<div>
+  <div *ngFor="let element of form.elements" [ngSwitch]="element">
+    <ngx-text *ngSwitchCase="elementType.TEXT"></ngx-text>
+    <ngx-textarea *ngSwitchCase="elementType.TEXTAREA"></ngx-textarea>
+    <ngx-radio *ngSwitchCase="elementType.RADIO"></ngx-radio>
+    <ngx-checkbox *ngSwitchCase="elementType.CHECKBOX"></ngx-checkbox>
+    <ngx-select *ngSwitchCase="elementType.SELECT"></ngx-select>
+  </div>
+</div>

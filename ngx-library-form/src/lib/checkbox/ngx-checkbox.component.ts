@@ -1,19 +1,19 @@
 import { Component, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { NgxTextarea } from "../../input/ngx-element";
+import { NgxCheckbox } from "../../input/ngx-element";
 
 @Component({
-  selector: 'ngx-textarea',
+  selector: 'ngx-checkbox',
   standalone: true,
   imports: [CommonModule],
-  templateUrl: 'ngx-textarea.component.html',
+  templateUrl: 'ngx-checkbox.component.html',
   styles: [
   ]
 })
-export class NgxTextareaComponent {
+export class NgxCheckboxComponent {
 
   @Input({
     required: true
   })
-  element!: NgxTextarea;
+  element!: NgxCheckbox;
 }
