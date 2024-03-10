@@ -1,4 +1,8 @@
 <div>
-  <label>{{ element.title }}</label>
-  <textarea></textarea>
+  <label [for]="element.id">
+    {{ element.title }}
+    <span *ngIf="element.required">*</span>
+  </label>
+  <textarea [name]="element.name" [id]="element.id" [placeholder]="element.placeholder" [disabled]="element.disabled">
+  </textarea>
 </div>

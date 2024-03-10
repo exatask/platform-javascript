@@ -1,4 +1,13 @@
 <div>
-  <label>{{ element.title }}</label>
-  <input type="checkbox" />
+  <label [for]="element.data[0].id">
+    {{ element.title }}
+    <span *ngIf="element.required">*</span>
+  </label>
+  <div>
+    <div *ngFor="let data of element.data">
+      <input type="checkbox" [name]="data.name" [id]="data.id" [value]="data.value"
+             [disabled]="element.disabled || data.disabled" />
+      <label [for]="data.id">{{ data.title }}</label>
+    </div>
+  </div>
 </div>

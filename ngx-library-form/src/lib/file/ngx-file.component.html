@@ -3,6 +3,6 @@
     {{ element.title }}
     <span *ngIf="element.required">*</span>
   </label>
-  <input type="text" [name]="element.name" [id]="element.id" [placeholder]="element.placeholder"
+  <input type="file" [name]="element.name" [id]="element.id" [placeholder]="element.placeholder"
          [disabled]="element.disabled" />
 </div>

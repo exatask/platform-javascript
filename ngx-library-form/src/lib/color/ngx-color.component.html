@@ -1,0 +1,7 @@
+<div>
+  <label [for]="element.id">
+    {{ element.title }}
+    <span *ngIf="element.required">*</span>
+  </label>
+  <input type="color" [name]="element.name" [id]="element.id" />
+</div>

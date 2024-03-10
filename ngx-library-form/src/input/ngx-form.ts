@@ -1,6 +1,6 @@
-import { NgxElement } from "./ngx-element";
+import { NgxGroup } from "./ngx-group";
 
 export class NgxForm {
 
-  elements!: NgxElement[];
+  groups!: NgxGroup[];
 }

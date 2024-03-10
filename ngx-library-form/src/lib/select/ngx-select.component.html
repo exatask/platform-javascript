@@ -1,4 +1,9 @@
 <div>
-  <label>{{ element.title }}</label>
-  <select></select>
+  <label [for]="element.id">
+    {{ element.title }}
+    <span *ngIf="element.required">*</span>
+  </label>
+  <select [name]="element.name" [id]="element.id" [disabled]="element.disabled">
+    <option value="" selected>{{ element.placeholder }}</option>
+  </select>
 </div>

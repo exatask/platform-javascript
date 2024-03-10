@@ -1,37 +1,74 @@
-import { Type } from "../constant/element";
+export enum Type {
 
-export interface NgxElement {
-
-  type: Type;
-  title: String;
+  TEXT,
+  TEXTAREA,
+  PASSWORD,
+  RADIO,
+  CHECKBOX,
+  SELECT,
+  COLOR,
+  FILE,
+  HIDDEN
 }
 
-export class NgxText implements NgxElement {
+export abstract class NgxElement {
 
   type!: Type;
   title!: String;
+  id!: String;
+  name!: String;
+  placeholder!: String;
+
+  required!: Boolean;
+  disabled!: Boolean;
 }
 
-export class NgxTextarea implements NgxElement {
-
-  type!: Type;
-  title!: String;
+export class NgxText extends NgxElement {
 }
 
-export class NgxRadio implements NgxElement {
-
-  type!: Type;
-  title!: String;
+export class NgxTextarea extends NgxElement {
 }
 
-export class NgxCheckbox implements NgxElement {
-
-  type!: Type;
-  title!: String;
+export class NgxPassword extends NgxElement {
 }
 
-export class NgxSelect implements NgxElement {
+export class NgxRadio extends NgxElement {
 
-  type!: Type;
+  data!: NgxRadioData[];
+}
+
+export class NgxCheckbox extends NgxElement {
+
+  data!: NgxCheckboxData[];
+}
+
+export class NgxSelect extends NgxElement {
+}
+
+export class NgxColor extends NgxElement {
+}
+
+export class NgxFile extends NgxElement {
+}
+
+export class NgxHidden extends NgxElement {
+}
+
+export class NgxRadioData {
+
+  id!: String;
   title!: String;
+  value!: String;
+
+  disabled!: Boolean;
+}
+
+export class NgxCheckboxData {
+
+  id!: String;
+  name!: String;
+  title!: String;
+  value!: String;
+
+  disabled!: Boolean;
 }

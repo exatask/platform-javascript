@@ -1,9 +1,24 @@
 <div>
-  <div *ngFor="let element of form.elements" [ngSwitch]="element">
-    <ngx-text *ngSwitchCase="elementType.TEXT"></ngx-text>
-    <ngx-textarea *ngSwitchCase="elementType.TEXTAREA"></ngx-textarea>
-    <ngx-radio *ngSwitchCase="elementType.RADIO"></ngx-radio>
-    <ngx-checkbox *ngSwitchCase="elementType.CHECKBOX"></ngx-checkbox>
-    <ngx-select *ngSwitchCase="elementType.SELECT"></ngx-select>
+  <div *ngFor="let group of form.groups">
+    <div *ngFor="let element of group.elements" [ngSwitch]="element">
+      <ngx-text *ngSwitchCase="elementType.TEXT" [element]="element">
+      </ngx-text>
+      <ngx-textarea *ngSwitchCase="elementType.TEXTAREA" [element]="element">
+      </ngx-textarea>
+      <ngx-password *ngSwitchCase="elementType.PASSWORD" [element]="element">
+      </ngx-password>
+      <ngx-radio *ngSwitchCase="elementType.RADIO" [element]="element">
+      </ngx-radio>
+      <ngx-checkbox *ngSwitchCase="elementType.CHECKBOX" [element]="element">
+      </ngx-checkbox>
+      <ngx-select *ngSwitchCase="elementType.SELECT" [element]="element">
+      </ngx-select>
+      <ngx-color *ngSwitchCase="elementType.COLOR" [element]="element">
+      </ngx-color>
+      <ngx-file *ngSwitchCase="elementType.FILE" [element]="element">
+      </ngx-file>
+      <ngx-hidden *ngSwitchCase="elementType.HIDDEN" [element]="element">
+      </ngx-hidden>
+    </div>
   </div>
 </div>
