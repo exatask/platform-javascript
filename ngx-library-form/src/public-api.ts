@@ -2,5 +2,5 @@
  * Public API Surface of ngx-library-form
  */
 
-export * from './lib/ngx-form.service';
-export * from './lib/ngx-form.component';
+export * from './libraries/ngx-form.service';
+export * from './libraries/ngx-form.component';
